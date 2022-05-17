@@ -1,14 +1,105 @@
+
+
 * {
     font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    border: none;
 }
-
+header {
+    position: relative;
+}
 h1, h2 {
     font-family: 'Valera Round', sans-serif;
+    font-size: 280%;
+}
+#logo h1 {
+    font-family: 'Dancing Script', cursive;
+}
+/*
+issues: text is for some reason outside of screen */
+#navbar li {
+    float: right;
+    list-style-type: none;
+    margin-right: 30px;
+}
+#logo, #navbar {
+    line-height: 75px;
+}
+/* makes text on navbar vertically centered */
+
+#pages, #transl {
+    margin-left: 10px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#pages {
+    font-size: 110%;
+    letter-spacing: 2px;
+    width: 300px;
+    right: 10px;
+}
+#transl {
+    font-size: 80%;
+    right: 300px;
 }
 #logo {
-    font-family: 'Dancing Script', cursive;
-    float: left;
+    margin-left: 30px;
+    width: 300px;
 }
-#pages {
-    float: right;
+
+/* make site compatible with tablets 
+issues: text is not centered
+*/
+
+@media only screen and (max-width: 700px) {
+    header {
+        position: relative;
+    }
+    #navbar {
+        float: none; 
+        width: 100%;
+        text-align-last: center;
+    }
+    #logo {
+        width: 100%;
+    }
+    #logo h1{
+        width: 100%;
+        float: none;
+        text-align-last: center;
+    }
+    #pages, #transl {
+        width: 100%;
+        line-height: 50px;
+        position: absolute;
+        top: 75px;
+        transform: translateY(-50%);
+    }
+}
+
+/* make site compatible with mobiles 
+issues: pages is on top of logo, transl not visible
+*/
+
+@media only screen and (max-width: 450px) {
+    header {
+        position: relative;
+    }
+    #navbar li {
+        float: none;
+    }
+    #logo {
+        float: none;
+        width: 100%;
+        text-align-last: center;
+    }
+    #logo h1 {
+        height: 75px;
+    }
+    #transl {
+        top: 125px;
+    }
 }
