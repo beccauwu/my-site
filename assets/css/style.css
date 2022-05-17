@@ -1,0 +1,14 @@
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+h1, h2 {
+    font-family: 'Valera Round', sans-serif;
+}
+#logo {
+    font-family: 'Dancing Script', cursive;
+    float: left;
+}
+#pages {
+    float: right;
+}
