@@ -79,27 +79,3 @@ issues: text is not centered
         transform: translateY(-50%);
     }
 }
-
-/* make site compatible with mobiles 
-issues: pages is on top of logo, transl not visible
-*/
-
-@media only screen and (max-width: 450px) {
-    header {
-        position: relative;
-    }
-    #navbar li {
-        float: none;
-    }
-    #logo {
-        float: none;
-        width: 100%;
-        text-align-last: center;
-    }
-    #logo h1 {
-        height: 75px;
-    }
-    #transl {
-        top: 125px;
-    }
-}
