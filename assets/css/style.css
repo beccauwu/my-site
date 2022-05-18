@@ -19,6 +19,9 @@ h1, h2 {
     font-family: 'Valera Round', sans-serif;
     font-size: 280%;
 }
+button {
+    background-color: inherit;
+}
 #logo h1 {
     font-family: 'Dancing Script', cursive;
 }
