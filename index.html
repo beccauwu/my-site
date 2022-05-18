@@ -16,6 +16,7 @@
 <body>
     <!-- header -->
     <header>
+       
         <!-- logo -->
         <div id="logo">
             <a href="index.html">
@@ -58,15 +59,12 @@
                     </nav>
                 </div>
             </div>
-            <div id="mobile-button" class="mobile-nav">
-                <button type="button">
-                    <i class="fa-solid fa-bars"></i>
-                </button>
-            </div>
-    </header>
-        <div id="hidden" class="mobile-nav">
-            <div id="pages-mobile" class="mobile-nav">
-                <nav>
+            <label class="floatright" for="navbutton">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+            <div class="container">
+                <input type="checkbox" class="navbutton" id="navbutton"/>
+                <nav id="pages-mobile">
                     <ul>
                         <li>
                             <a href="/html/about.html" aria-label="Go to the About Us page (opens in this tab)">About Us</a>
@@ -79,9 +77,7 @@
                         </li>
                     </ul>
                 </nav>
-            </div>
-            <div id="transl-mobile">
-                <nav>
+                <nav id="transl-mobile">
                     <ul>
                         <li>
                             <a href="/html/sv/index.html">sv</a>
@@ -95,7 +91,8 @@
                     </ul>
                 </nav>
             </div>
-        </div>
+    </header>
+        <div id="hidden" class="mobile-nav">
     <footer>
 
     </footer>
