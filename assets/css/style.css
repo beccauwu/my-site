@@ -6,15 +6,27 @@
     padding: 0;
     border: none;
 }
+body {
+    width: 100%;
+}
 header {
     position: relative;
+    background-color: aqua;
+    width: 100%;
 }
+
 h1, h2 {
     font-family: 'Valera Round', sans-serif;
     font-size: 280%;
 }
 #logo h1 {
     font-family: 'Dancing Script', cursive;
+}
+#mobile-button {
+    position: fixed;
+    right: 30px;
+    top: 30px;
+    z-index: -1;
 }
 /*
 issues: text is for some reason outside of screen */
@@ -50,6 +62,21 @@ issues: text is for some reason outside of screen */
     width: 300px;
 }
 
+/* pushes the mobile nav box to the back */
+
+#hidden {
+    position: fixed;
+    right: -20%;
+    height: 100%;
+    width: 20%;
+    background-color: blueviolet;
+}
+#hidden li {
+    list-style-type: none;
+}
+
+
+
 /* make site compatible with tablets 
 issues: text is not centered
 */
@@ -57,25 +84,48 @@ issues: text is not centered
 @media only screen and (max-width: 700px) {
     header {
         position: relative;
+        top: 0%;
+    }
+    #mobile-button {
+        z-index: 1;
+        width: 30px;
+        height: 30px;
+        right: 20px;
+        line-height: 75%;
+        text-align-last: center;
+        font-size: 20px;
+    }
+    #logo {
+        padding-right: 20px;
     }
     #navbar {
         float: none; 
-        width: 100%;
         text-align-last: center;
     }
-    #logo {
-        width: 100%;
-    }
     #logo h1{
-        width: 100%;
         float: none;
         text-align-last: center;
     }
     #pages, #transl {
-        width: 100%;
-        line-height: 50px;
-        position: absolute;
-        top: 75px;
-        transform: translateY(-50%);
+        z-index: -1;
+    }
+
+/* makes hidden appear on screen */
+
+    @keyframes hidden-ani {
+        from{
+            right: -20%;
+        }
+        to{
+            right: 0px;
+        }
+    }
+    @keyframes button-ani {
+        from{
+            z-index: 1;
+        }
+        to{
+            z-index: -1;
+        }
     }
 }
