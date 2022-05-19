@@ -1,7 +1,98 @@
+/* colour palette */
+:root {
+    --blue-sapphire: #166088ff;
+    --aero: #81b2e2ff;
+    --pink-lavender: #e2b5d0ff;
+    --chinese-violet: #7f4b80ff;
+    --dark-purple: #32021fff;
+}
+
 /* html body etc */
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    text-decoration: none;
+}
 
 body {
     font-size: 100%;
     font-family: 'Poppins', sans-serif;
-    background-color: rgb(231, 231, 231);
+    background-color: var(--pink-lavender);
 }
+
+/* general classes */
+
+.fontsize80 {
+    font-size: 80%;
+}
+
+/* headings, links and top bar */
+
+h1 {
+    font-family: 'Dancing Script', cursive;
+    letter-spacing: 3px;
+    color: var(--dark-purple);
+    font-size: 300%;
+}
+
+a {
+    color: var(--chinese-violet);
+    font-weight: 1000;
+}
+.navigation-links {
+    list-style-type: none;
+    float: right;
+    margin: 0;
+    padding: 0;
+}
+.navigation-links li {
+    display: inline-block;
+    padding: 15px;
+    letter-spacing: 3px;
+}
+
+.navigation-links a:hover {
+    color: var(--dark-purple);
+    text-decoration: underline;
+}
+
+#logo {
+    padding: 15px;
+    float: left;
+}
+#top-bar div {
+    text-align: center;
+}
+#top-bar {
+    vertical-align: middle;
+    line-height: 50px;
+}
+
+#translations {
+    padding-right: 30px;
+}
+
+/* make it work on mobile */
+
+@media only screen and (max-width: 700px) {
+
+    /* logo and navigation */
+
+    #top-bar {
+        line-height: normal;
+    }
+    #top-bar div {
+        float: none;
+        margin: auto;
+    }
+    .navigation-links li {
+        padding: 10px;
+    }
+    #logo {
+        padding: 10px;
+    }
+}
+
+
+

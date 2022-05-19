@@ -16,8 +16,11 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Poppins:wght@300&family=Varela+Round&display=swap"
         rel="stylesheet">
+        
+    <!-- icon from pngtree.com -->
+    <link rel="icon" href="/assets/images/icon.png">
     <script src="https://kit.fontawesome.com/cd478b5352.js" crossorigin="anonymous"></script>
-    <title>Lätkämamma</title>
+    <title>Page title</title>
 </head>
 
 <body>
@@ -25,31 +28,16 @@
     <header>
         <div id="top-bar">
             <!-- logo -->
-            <span id="logo">
+            <div id="logo">
                 <a href="index.html">
                     <picture>
 
                     </picture>
-                    <h1>Lätkämamma</h1>
+                    <h1>Page name</h1>
                 </a>
-            </span>
+            </div>
             <!-- links to other pages within the site including translations -->
-            <span id="transl">
-                <nav>
-                    <ul>
-                        <li>
-                            <a href="/html/sv/index.html">sv</a>
-                        </li>
-                        <li>
-                            <a href="/html/fi/index.html">fi</a>
-                        </li>
-                        <li>
-                            <a href="index.html">en</a>
-                        </li>
-                    </ul>
-                </nav>
-            </span>
-            <span id="pages">
+            <div id="pages" class="navigation-links">
                 <nav>
                     <ul>
                         <li>
@@ -64,14 +52,28 @@
                         </li>
                     </ul>
                 </nav>
-            </span>
+            </div>
+            <div id="translations" class="navigation-links fontsize80">
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="/html/sv/index.html">sv</a>
+                        </li>
+                        <li>
+                            <a href="/html/fi/index.html">fi</a>
+                        </li>
+                        <li>
+                            <a href="index.html">en</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
 
         </div>
     </header>
-    <div id="hidden" class="mobile-nav">
-        <footer>
+    <footer>
 
-        </footer>
+    </footer>
 
 </body>
 
