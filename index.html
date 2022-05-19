@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,77 +8,34 @@
     <link rel="stylesheet" href="/assets/css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Poppins:wght@300&family=Varela+Round&display=swap" rel="stylesheet"><link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Poppins:wght@300&family=Varela+Round&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Poppins:wght@300&family=Varela+Round&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Poppins:wght@300&family=Varela+Round&display=swap"
+        rel="stylesheet">
     <script src="https://kit.fontawesome.com/cd478b5352.js" crossorigin="anonymous"></script>
     <title>Lätkämamma</title>
 </head>
+
 <body>
     <!-- header -->
     <header>
-       
-        <!-- logo -->
-        <div id="logo">
-            <a href="index.html">
-                <picture>
+        <div id="top-bar">
+            <!-- logo -->
+            <span id="logo">
+                <a href="index.html">
+                    <picture>
 
-                </picture>
-                <h1>Lätkämamma</h1>
-            </a>
-        </div>
-        <!-- links to other pages within the site including translations -->
-            <div id="navbar">
-                <div id="pages">
-                    <nav>
-                        <ul>
-                            <li>
-                                <a href="/html/about.html" aria-label="Go to the About Us page (opens in this tab)">About Us</a>
-                            </li>
-                            <li>
-                                <a href="/html/shop.html" aria-label="Go to our Shop (opens in this tab)">Shop</a>
-                            </li>
-                            <li>
-                                <a href="/html/blog.html" aria-label="Go to the blog page (opens in this tab)">Blog</a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-                <div id="transl">
-                    <nav>
-                        <ul>
-                            <li>
-                                <a href="/html/sv/index.html">sv</a>
-                            </li>
-                            <li>
-                                <a href="/html/fi/index.html">fi</a>
-                            </li>
-                            <li>
-                                <a href="index.html">en</a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-            <label class="floatright" for="navbutton">
-                <i class="fa-solid fa-bars"></i>
-            </label>
-            <div class="container">
-                <input type="checkbox" class="navbutton" id="navbutton"/>
-                <nav id="pages-mobile">
-                    <ul>
-                        <li>
-                            <a href="/html/about.html" aria-label="Go to the About Us page (opens in this tab)">About Us</a>
-                        </li>
-                        <li>
-                            <a href="/html/shop.html" aria-label="Go to our Shop (opens in this tab)">Shop</a>
-                        </li>
-                        <li>
-                            <a href="/html/blog.html" aria-label="Go to the blog page (opens in this tab)">Blog</a>
-                        </li>
-                    </ul>
-                </nav>
-                <nav id="transl-mobile">
+                    </picture>
+                    <h1>Lätkämamma</h1>
+                </a>
+            </span>
+            <!-- links to other pages within the site including translations -->
+            <span id="transl">
+                <nav>
                     <ul>
                         <li>
                             <a href="/html/sv/index.html">sv</a>
@@ -90,12 +48,63 @@
                         </li>
                     </ul>
                 </nav>
-            </div>
-    </header>
-        <div id="hidden" class="mobile-nav">
-    <footer>
+            </span>
+            <span id="pages">
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="/html/about.html" aria-label="Go to the About Us page (opens in this tab)">About
+                                Us</a>
+                        </li>
+                        <li>
+                            <a href="/html/shop.html" aria-label="Go to our Shop (opens in this tab)">Shop</a>
+                        </li>
+                        <li>
+                            <a href="/html/blog.html" aria-label="Go to the blog page (opens in this tab)">Blog</a>
+                        </li>
+                    </ul>
+                </nav>
+            </span>
 
-    </footer>
-    
+        </div>
+        <label class="floatright" for="navbutton">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+        <div class="container">
+            <input type="checkbox" class="navbutton" id="navbutton" />
+            <nav id="pages-mobile">
+                <ul>
+                    <li>
+                        <a href="/html/about.html" aria-label="Go to the About Us page (opens in this tab)">About Us</a>
+                    </li>
+                    <li>
+                        <a href="/html/shop.html" aria-label="Go to our Shop (opens in this tab)">Shop</a>
+                    </li>
+                    <li>
+                        <a href="/html/blog.html" aria-label="Go to the blog page (opens in this tab)">Blog</a>
+                    </li>
+                </ul>
+            </nav>
+            <nav id="transl-mobile">
+                <ul>
+                    <li>
+                        <a href="/html/sv/index.html">sv</a>
+                    </li>
+                    <li>
+                        <a href="/html/fi/index.html">fi</a>
+                    </li>
+                    <li>
+                        <a href="index.html">en</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div id="hidden" class="mobile-nav">
+        <footer>
+
+        </footer>
+
 </body>
+
 </html>
