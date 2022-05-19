@@ -20,12 +20,16 @@ body {
     font-family: 'Poppins', sans-serif;
     background-color: var(--pink-lavender);
 }
+header {
+    height: 80px
+}
 
 /* general classes */
 
 .fontsize80 {
     font-size: 80%;
 }
+
 
 /* headings, links and top bar */
 
@@ -67,6 +71,7 @@ a {
 #top-bar {
     vertical-align: middle;
     line-height: 50px;
+    height: fit-content;
 }
 
 #translations {
@@ -92,6 +97,13 @@ a {
     #logo {
         padding: 10px;
     }
+    .section-break {
+    width: 80%;
+    height: 5px;
+    margin: auto;
+    border-top: 1px solid var(--dark-purple);
+}
+    
 }
 
 
