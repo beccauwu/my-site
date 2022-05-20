@@ -92,7 +92,17 @@ h1 {
     padding-right: 30px;
 }
 #topbtn {
-    z-index: -1;
+        display: none;
+        position: fixed;
+        z-index: -1;
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        border: 2px solid var(--dark-purple);
+        background-color: var(--pink-lavender);
+        text-align: center;
+        bottom: 20px;
+        right: 20px;
 }
 #sticky {
     height: 2000px;
@@ -130,7 +140,11 @@ h1 {
     margin: auto;
     border-top: 1px solid var(--dark-purple);
     }
+
+/* button to get to top on mobile and tablet where navbar isn't sticky */
+
     #topbtn{
+        display: initial;
         position: fixed;
         z-index: 1;
         width: 35px;
@@ -141,6 +155,9 @@ h1 {
         text-align: center;
         bottom: 20px;
         right: 20px;
+
+        /* add shadow to make button stand out more */
+        box-shadow: 0 0 3px 1px black;
     }
     #topbtn a {
         display: block;
