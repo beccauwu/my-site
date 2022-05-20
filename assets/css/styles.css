@@ -41,6 +41,9 @@ footer {
 .center {
     text-align: center;
 }
+.current {
+    text-decoration: underline;
+}
 
 /* headings, links and top bar */
 
