@@ -54,7 +54,7 @@ h1 {
     font-size: 300%;
 }
 
-a {
+#top-bar a {
     color: var(--chinese-violet);
     font-weight: 1000;
 }
@@ -91,22 +91,32 @@ a {
 #translations {
     padding-right: 30px;
 }
+#topbtn {
+    z-index: -1;
+}
 #sticky {
     height: 2000px;
 }  
 
+
 /* make it work on mobile */
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 804px) {
 
     /* logo and navigation */
-
+    header {
+        position: unset;
+        height: 166px;
+    }
     #top-bar {
         line-height: normal;
     }
     #top-bar div {
         float: none;
         margin: auto;
+    }
+    #translations {
+        padding: 0;
     }
     .navigation-links li {
         padding: 10px;
@@ -119,8 +129,39 @@ a {
     height: 5px;
     margin: auto;
     border-top: 1px solid var(--dark-purple);
-}
+    }
+    #topbtn{
+        position: fixed;
+        z-index: 1;
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        border: 2px solid var(--dark-purple);
+        background-color: var(--pink-lavender);
+        text-align: center;
+        bottom: 20px;
+        right: 20px;
+    }
+    #topbtn a {
+        display: block;
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        font-size: 150%;
+        font-weight: bolder;
+        color: var(--dark-purple);
+    }
     
+}
+
+@media only screen and (max-width: 345px) {
+    header {
+        position: unset;
+        height: 211px;
+    }
+    #translations {
+        padding: 0;
+    }
 }
 
 
