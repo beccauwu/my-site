@@ -1,10 +1,10 @@
 /* colour palette */
 :root {
     --blue-sapphire: #166088ff;
-    --aero: #81b2e2ff;
+    --aero: rgb(166, 200, 233);
     --pink-lavender: #e2b5d0ff;
     --chinese-violet: #7f4b80ff;
-    --dark-purple: #32021fff;
+    --dark-purple: rgb(92, 3, 56);
 }
 
 /* html body etc */
@@ -17,11 +17,19 @@
 
 body {
     font-size: 100%;
+    width: 100%;
     font-family: 'Poppins', sans-serif;
-    background-color: var(--pink-lavender);
+    background-color: var(--aero);
 }
 header {
-    height: 80px
+    position: sticky;
+    top: 0;
+    height: 80px;
+    background-color: var(--pink-lavender);
+}
+footer {
+    padding: 30px;
+    background-color: var(--pink-lavender);
 }
 
 /* general classes */
@@ -30,6 +38,9 @@ header {
     font-size: 80%;
 }
 
+.center {
+    text-align: center;
+}
 
 /* headings, links and top bar */
 
@@ -77,6 +88,9 @@ a {
 #translations {
     padding-right: 30px;
 }
+#sticky {
+    height: 2000px;
+}  
 
 /* make it work on mobile */
 
