@@ -26,10 +26,12 @@ header {
     top: 0;
     height: 80px;
     background-color: var(--pink-lavender);
+    border-bottom: 1px solid var(--dark-purple);
 }
 footer {
     padding: 30px;
     background-color: var(--pink-lavender);
+    border-top: 1px solid var(--dark-purple);
 }
 
 /* general classes */
@@ -42,7 +44,9 @@ footer {
     text-align: center;
 }
 .current {
-    text-decoration: underline;
+    /*text-decoration: underline;*/
+    color: var(--chinese-violet);
+    font-weight: 1500;
 }
 
 /* headings, links and top bar */
@@ -54,7 +58,7 @@ h1 {
     font-size: 300%;
 }
 
-#top-bar a {
+#top-bar a:not(.current) {
     color: var(--chinese-violet);
     font-weight: 1000;
 }
@@ -91,10 +95,12 @@ h1 {
 #translations {
     padding-right: 30px;
 }
+/* button to get to top */
 #topbtn {
+        /* button is hidden normally */
         display: none;
+
         position: fixed;
-        z-index: -1;
         width: 35px;
         height: 35px;
         border-radius: 50%;
@@ -103,6 +109,8 @@ h1 {
         text-align: center;
         bottom: 20px;
         right: 20px;
+        /* add shadow to make button stand out more */
+        box-shadow: 0 0 3px 1px black;
 }
 #sticky {
     height: 2000px;
@@ -141,23 +149,9 @@ h1 {
     border-top: 1px solid var(--dark-purple);
     }
 
-/* button to get to top on mobile and tablet where navbar isn't sticky */
-
+    /* make button visible on tablets and mobile */ 
     #topbtn{
         display: initial;
-        position: fixed;
-        z-index: 1;
-        width: 35px;
-        height: 35px;
-        border-radius: 50%;
-        border: 2px solid var(--dark-purple);
-        background-color: var(--pink-lavender);
-        text-align: center;
-        bottom: 20px;
-        right: 20px;
-
-        /* add shadow to make button stand out more */
-        box-shadow: 0 0 3px 1px black;
     }
     #topbtn a {
         display: block;
