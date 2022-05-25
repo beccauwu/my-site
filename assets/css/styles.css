@@ -290,6 +290,21 @@ h2 {
     border-radius: 15px;
 }
 
+/* about */
+.about-text {
+    width: 70vw;
+    margin: 0 auto;
+    border-radius: 15px;
+    border: 5px solid var(--red);
+}
+.about-text h2 {
+    font-size: 150%;
+}
+.about-text p {
+    color: var(--purple);
+    font-size: 110%;
+}
+
 
 /* make it work on mobile */
 
@@ -416,6 +431,10 @@ h2 {
     .hero-text a {
         font-size: 110%;
         padding: 7px;
+    }
+    /* about */
+    .about-text {
+        width: 90vw;
     }
 }
 
