@@ -5,6 +5,7 @@
     --purple: #c09bd8ff;
     --red: #b6244fff;
     --green: #00a878ff;
+    --white: #ffffff;
 }
 
 /* html body etc */
@@ -60,6 +61,18 @@ footer {
 } 
 .bold {
     font-weight: bold;
+}
+.border-right {
+    border-right: 1px solid var(--red);
+}
+.border-top {
+    border-top: 1px solid var(--red);
+}
+.color-red {
+    color: var(--red);
+}
+.color-purple {
+    color: var(--purple);
 }
 
 /* headings, links and top bar */
@@ -248,12 +261,6 @@ h2 {
 .prices p {
     color: var(--red);
 }
-.border-right {
-    border-right: 1px solid var(--red);
-}
-.border-top {
-    border-top: 1px solid var(--red);
-}
 .prices table, .prices th, .prices td {
     border-collapse: collapse;
     padding: 5px;
@@ -324,7 +331,7 @@ h2 {
 }
 .whatsapp {
     display: inline-block;
-    background-color: white;
+    background-color: var(--white);
     border-radius: 15px;
     padding: 5px;
 }
