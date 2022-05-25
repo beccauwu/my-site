@@ -244,6 +244,10 @@ h2 {
 }
 .prices td {
     color: var(--purple);
+    font-size: 80%;
+}
+.prices th {
+    font-size: 110%;
 }
 .prices p {
     color: var(--red);
@@ -257,7 +261,6 @@ h2 {
 .prices table, .prices th, .prices td {
     border-collapse: collapse;
     padding: 5px;
-    font-size: 110%;
 }
 #more-info {
     padding: 10px;
