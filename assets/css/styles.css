@@ -156,7 +156,7 @@ h2 {
 
 
 .hero-image {
-    background-image: url(../images/intro.jpg);
+    background-image: url(../images/intro.webp);
     height: 100vh;
     width: 100vw;
     background-position: center;
@@ -439,7 +439,7 @@ h2 {
 @media only screen and (max-width:700px) {
     /* hero image */
     .hero-image {
-        background-image: url(../images/hero-2.jpg);
+        background-image: url(../images/hero-2.webp);
         height: 100vh;
         background-position: center;
         background-size: cover;
