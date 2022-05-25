@@ -304,6 +304,59 @@ h2 {
     color: var(--purple);
     font-size: 110%;
 }
+.contact-info {
+    display: inline-block;
+    width: 200px;
+    padding: 5px;
+    border-radius: 15px;
+    border: 5px solid var(--red);
+}
+.contact-info a {
+    color: var(--purple);
+}
+.contact-info a:hover {
+    text-decoration: underline;
+}
+.contact-info p {
+    color: var(--red);
+    font-weight: bold;
+    font-size: 80%;
+}
+.whatsapp {
+    display: inline-block;
+    background-color: white;
+    border-radius: 15px;
+    padding: 5px;
+}
+.whatsapp img {
+    max-width: 150px;
+}
+.elsewhere {
+    display: inline-block;
+    width: 200px;
+    padding: 5px;
+    border-radius: 15px;
+    border: 5px solid var(--red);
+}
+.elsewhere a {
+    color: var(--purple);
+}
+.elsewhere p {
+    color: var(--red);
+    font-weight: bold;
+    text-decoration: underline;
+}
+.elsewhere i {
+    color: var(--red);
+    font-size: 150%;
+    letter-spacing: 5px;
+}
+#contact h2, #socials h2 {
+    text-decoration: underline;
+}
+.faa:hover {
+    text-decoration: underline;
+}
 
 
 /* make it work on mobile */
