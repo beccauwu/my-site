@@ -499,7 +499,7 @@ h2 {
     }
 }
 
-@media only and screen (max-width: 449px) {
+@media only screen and (max-width: 449px) {
     .translated {
         height: 211px;
     }
