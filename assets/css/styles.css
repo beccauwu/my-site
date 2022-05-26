@@ -75,6 +75,7 @@ footer {
     color: var(--purple);
 }
 
+
 /* headings, links and top bar */
 
 h1 {
@@ -495,6 +496,12 @@ h2 {
     /* about */
     .about-text {
         width: 90vw;
+    }
+}
+
+@media only and screen (max-width: 449px) {
+    .translated {
+        height: 211px;
     }
 }
 
