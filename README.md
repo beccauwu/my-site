@@ -76,6 +76,7 @@
 
 <!-- ABOUT THE PROJECT -->
 ## 1. Introduction
+<h2 id="introduction">1. Introduction</h2>
 
 [![Product Name Screen Shot][product-screenshot]](https://beccauwu.github.io/my-site)
 
