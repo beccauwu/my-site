@@ -38,12 +38,12 @@
 <details>
   <summary>Table of Contents</summary>
   <ol>
-    <li><a href="#introduction">1. Introduction</a></li>
+    <li><a href="#introduction">Introduction</a></li>
     <li>
-      <a href="#site-styling">2. Site Styling</a>
+      <a href="#styling">Site Styling</a>
       <ul>
         <li>
-          <a href="#site-wide">2.1. Common Elements</a>
+          <a href="#common-elements">2.1. Common Elements</a>
           <ul>
             <li><a href="#header">2.1.1. Header</a></li>
             <li><a href="#footer">2.1.2. Footer</a></li>
@@ -63,7 +63,7 @@
         <li><a href="#worth-mentioning">2.3. Worth Mentioning</a></li>
       </ul>
     </li>
-    <li><a href="#testing">3. Testing</a></li>
+    <li><a href="#testing">Testing</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
@@ -129,21 +129,35 @@ At a viewport width of 804px the header started taking out a substantial amount 
 
 <h4 id="index"> 2.2.1. index</h4>
 
+![index page on mobile][index-425]
+![index page screenshot][index] 
+
 The index page does not contain much content and is designed to be a landing page from where the user themselves can choose the information they wish to receive and in what order through browsing the other pages. Its only features are a background image which is different depending on the screen size due to the image in 16:9 aspect ratio losing its foreground elements after a certain screen width. Instead at smaller widths there is an image with a more compatible aspect ratio for viewing on displays where the height is greater than the width. Horizontally in the centre of the image is an opaque dark background oval with the text "Hi! I'm Rebecca, I'll be your accountant or photographer" and a link underneath the text with the caption "Hire me", linking to the page containing pricing information for the business. 
 
 The text is phrased in a particular way to convey a sense of "semi-professionalism" for a lack of a better wording, meaning that I want the user to know I will be professional but at the same time friendly. In contrast to "Welcome!", "Hi!" does convey a more casual meaning which I see as preferable for my target audience. "Welcome" is also very broadly used in this context, where the use of "Hi" could capture the user's focus better.
 
 <h4 id="pricing">2.2.2. Pricing</h4>
 
+![pricing page on mobile][pricing-425]
+![pricing page][pricing]
+
 The first elements on this page are quite naturally tables showing examples of the business' price list, where the data is separated into two columns - "product" and "price". There are two tables due to the business operating under two different categories, accounting and photography. Underneath the tables is a section of text - giving a disclaimer of the tables' content not reflecting the full amount of services offered, containing a link to the contact information section of the about page. Information on the business' donation policy and external shop is also provided here.
 
 <h4 id="gallery">2.2.3. Gallery</h4>
+
+![gallery page on mobile][gallery-425]
+</br>
+![gallery page on tablet][gallery-800]
+![gallery page][gallery]
 
 The gallery page is in its entirety only an assortment of photos to act as a photography portfolio, in order for the customers to feel confident in hiring the business for photography. The gallery is a 4-column flexbox which adapts its stacking for the screen width - the maximum amount of columns is 4 but depending on the screen it will be 2 or 1 columns. I ran into issues with the flexbox from the start in the 4 column variation; even though it should have aligned, well one column kept stacking down. I figured out that the issue has to do with padding, which it was, however, it doesn't explain the numerous examples of similar solutions found online seemingly working without issue. My fix to this was to subtract the amount of side padding in total divided by the amount of columns and use this as the flex and max-width values, which fixed the issue.
 
 ##### Mobile / Tablet
 
 <h4 id="about">2.2.4. About</h4>
+
+![about page on mobile][about-425]
+![about page][about]
 
 ##### Mobile / Tablet
 
