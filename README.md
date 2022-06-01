@@ -75,7 +75,6 @@
 
 
 <!-- ABOUT THE PROJECT -->
-## 1. Introduction
 <h2 id="introduction">1. Introduction</h2>
 
 [![Product Name Screen Shot][product-screenshot]](https://beccauwu.github.io/my-site)
@@ -86,34 +85,34 @@
 
 
 <!-- GETTING STARTED -->
-## 2. Site Styling
+<h2 id="styling">2. Site Styling</h2>
 
 Here I will go through all the different design choices and talk about what implications they are designed to have on user experience. As a general note here in the beginning, it would be important to stress that usability has been the top priority in creating the site and thorough testing has been done to see potential flaws and fix them.
 
-### 2.1. Common Elements
+<h3 id="common-elements">2.1. Common Elements</h3>
 
 In this category of design choices are the header and footer as well as all the recurring stylings throughout all the pages. They all stay the same across all pages for consistency purposes.
 
-#### 2.1.1. Header
+<h4 id="header"> 2.1.1. Header</h4>
 
 ![Header Image][header]
 
 With the header layout I have generally tried to opt in for relatively simple solutions, but also ones that regardless work as intended. The header has a logo text on the left side, linking to the index page, and links to all the pages on the right. The links for translations are in a smaller font on the left of the page links and link to the translated version of the page the user is currently viewing. All these links get underlined on hover to make them stand out as links. The current page viewed is underlined to make it easier to understand which page one is on. The whole header is sticky up to a viewport width of 804px, when instead a working solution was added in the form of a button linking to the top of the page, visible in the bottom right corner. 
 
-#### 2.1.2. Footer
+<h4 id="footer"> 2.1.2. Footer</h4>
 
 ![Footer Image][footer] 
 ![Footer Image on Mobile][footer-425]
 
 The footer layout is very simple, with only a copyright notice in the middle and a sigil showing my certification within the Swedish Accounting Association (SRF). The height of the footer is the same as of the header when on laptops for consistency - unlike the header it does not resize depending on the screen width due to there not being enough content to necesitate this.
 
-#### 2.1.3. Colours
+<h4 id="colours"> 2.1.3. Colours</h4>
 
 ![Site colour palette][colours]
 
 For the colour scheme on my site I chose to go with colours already in use by the business - there is one inconsistency from the colour scheme which is the background colour of the WhatsApp QR code which did not work with any of the colours in the colour scheme, only looking fine with a white background. All colours used were added to the :root of the stylesheet as variables to make navigating between them easier, the white was also added to this to provide consistency in the code despite it not being part of the "chosen" colour scheme for the site.
 
-#### 2.1.4. Other
+<h4 id="other"> 2.1.4. Other</h4>
 
 ##### Borders
 
@@ -126,33 +125,33 @@ The border thickness is consistent depending on the element it is applied on. Fo
 
 At a viewport width of 804px the header started taking out a substantial amount of the screen height and would have only ended up being in the way for the user. At this width there is instead a button in the bottom right corner that links to the top of the page in order for the user to still be able to easily access the navigataion bar when needed. The button is round and has an arrow pointing upwards in green on a black background, with green borders around.
 
-### 2.2. Pages
+<h3 id="pages">2.2. Pages</h3>
 
-#### 2.2.1. Index
+<h4 id="index"> 2.2.1. index</h4>
 
 The index page does not contain much content and is designed to be a landing page from where the user themselves can choose the information they wish to receive and in what order through browsing the other pages. Its only features are a background image which is different depending on the screen size due to the image in 16:9 aspect ratio losing its foreground elements after a certain screen width. Instead at smaller widths there is an image with a more compatible aspect ratio for viewing on displays where the height is greater than the width. Horizontally in the centre of the image is an opaque dark background oval with the text "Hi! I'm Rebecca, I'll be your accountant or photographer" and a link underneath the text with the caption "Hire me", linking to the page containing pricing information for the business. 
 
 The text is phrased in a particular way to convey a sense of "semi-professionalism" for a lack of a better wording, meaning that I want the user to know I will be professional but at the same time friendly. In contrast to "Welcome!", "Hi!" does convey a more casual meaning which I see as preferable for my target audience. "Welcome" is also very broadly used in this context, where the use of "Hi" could capture the user's focus better.
 
-#### 2.2.2. Pricing
+<h4 id="pricing">2.2.2. Pricing</h4>
 
 The first elements on this page are quite naturally tables showing examples of the business' price list, where the data is separated into two columns - "product" and "price". There are two tables due to the business operating under two different categories, accounting and photography. Underneath the tables is a section of text - giving a disclaimer of the tables' content not reflecting the full amount of services offered, containing a link to the contact information section of the about page. Information on the business' donation policy and external shop is also provided here.
 
-#### 2.2.3. Gallery
+<h4 id="gallery">2.2.3. Gallery</h4>
 
 The gallery page is in its entirety only an assortment of photos to act as a photography portfolio, in order for the customers to feel confident in hiring the business for photography. The gallery is a 4-column flexbox which adapts its stacking for the screen width - the maximum amount of columns is 4 but depending on the screen it will be 2 or 1 columns. I ran into issues with the flexbox from the start in the 4 column variation; even though it should have aligned, well one column kept stacking down. I figured out that the issue has to do with padding, which it was, however, it doesn't explain the numerous examples of similar solutions found online seemingly working without issue. My fix to this was to subtract the amount of side padding in total divided by the amount of columns and use this as the flex and max-width values, which fixed the issue.
 
 ##### Mobile / Tablet
 
-#### 2.2.4. About
+<h4 id="about">2.2.4. About</h4>
 
 ##### Mobile / Tablet
 
-## 3. Testing
+<h2 id="testing">3. Testing</h2>
 
 All of the pages have been thoroughly tested by individuals as well as using software such as ARC and Lighthouse. The user feedback has been positive, without any major suggestions for improvement. Both softwares showed some issues, which have been solved as well as they possibly could have been using the already existing site framework.
 
-### 3.2. Issues During Testing
+<h3 id="issues">3.2. Issues During Testing</h3>
 
 <ul>
   <li>
@@ -168,11 +167,11 @@ All of the pages have been thoroughly tested by individuals as well as using sof
 
 All of the UI was tested with both Lighthouse and ARC, with both flagging the contrast ratio of the logo text compared to the background as being too low, which I believe to be a false positive. After multiple-user testing, the conclusion has consistently been that it is fully readable. The pages have been put through multiple different colour blindness filters where the text has also been fully readable on each of them. Further evidence of a false positive is that neither of these extensions flag the text on the index page hero photo, where logically the contrast ratio should be registered as lower due to the opaque background. I believe the testing fully disregards the header background colour and instead tests the logo text against the background photo on the index page, which is behind the header and therefore doesn't affect the readability of the text whatsoever.
 
-## 4. Bugs
+<h2 id="bugs">4. Bugs</h2>
 
 There is a minor issue of one column in the gallery page having an amount of top padding I cannot explain at this point. It isn't an issue in terms of usability, but aesthetically it creates an inconsistent amount of gap between two of the pictures, which for me is a moderate nuisance. I will continue researching what the fault could be and aim to correct this as soon as I am able to.
 
-## 5. Future Enhancements
+<h2 id="future-enhancements">5. Future Enhancements</h2>
 
 There are a few details I would definitely like to improve with the site in the future:
 
@@ -192,7 +191,7 @@ There are a few details I would definitely like to improve with the site in the 
 </ol>
 
 <!-- CONTACT -->
-## Contact
+<h2 id="contact">6. Contact</h2>
 
 Rebecca Perttula - [@uwuphoto](https://twitter.com/uwuphoto) - rebecca@perttula.co
 
@@ -203,7 +202,7 @@ Project Link: [https://github.com/beccauwu/my-site](https://github.com/beccauwu/
 
 
 <!-- Credits -->
-## Credits
+<h2 id="credits">7. Credits</h2>
 
 * []()
 * []()
