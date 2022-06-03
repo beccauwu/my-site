@@ -102,7 +102,7 @@ h1 {
 h2 {
     color: var(--red);
     font-family: 'Varela Round', sans-serif;
-    font-size: 130%;
+    font-size: 170%;
 }
 
 #top-bar a {
@@ -115,6 +115,7 @@ h2 {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    padding-right: 30px;
 }
 
 .navigation-links li {
@@ -159,8 +160,9 @@ h2 {
     right: 20px;
     text-align: center;
     width: 35px;
-    z-index: 1;
     /* button is hidden normally */
+    z-index: 1;
+    
 }
 
 /* footer */
@@ -199,18 +201,13 @@ h2 {
 }
 
 .hero-text-background {
+    top: calc(50% - 80px);
     background-color: rgba(0, 0, 0, 0.7);
     border-radius: 50%;
     border: 3px solid black;
     margin: 0 auto;
     padding: 40px;
-    position: absolute;
-    top: calc(50% - 80px);
-    transform: translate(0, 40%);
     width: 30%;
-    /*  */
-    /*  */
-    /*  */
 }
 
 .hero-text {
@@ -223,10 +220,6 @@ h2 {
 
 .hero-text h1 {
     font-size: 450%;
-}
-
-.hero-text h2 {
-    font-size: 170%;
 }
 
 .hero-text a {
@@ -269,7 +262,6 @@ h2 {
 }
 
 #pricing h2 {
-    font-size: 170%;
     padding-bottom: 5px;
 }
 
@@ -421,7 +413,7 @@ h2 {
 
 /* make it work on mobile */
 
-@media only screen and (max-width: 804px) {
+@media only screen and (max-width: 925px) {
     
     /* logo and navigation */
     header {
