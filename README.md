@@ -147,6 +147,7 @@ The first elements on this page are quite naturally tables showing examples of t
 
 ![gallery page on mobile][gallery-425]
 </br>
+
 ![gallery page on tablet][gallery-800]
 ![gallery page][gallery]
 
@@ -158,6 +159,8 @@ The gallery page is in its entirety only an assortment of photos to act as a pho
 
 ![about page on mobile][about-425]
 ![about page][about]
+
+The about page has the purpose of informing the user about the background of the business, how it started, why it started and what it does. It also features clickable links for email, mobile and WhatsApp, which also has a QR code for those on PCs. There is also a link to the FineArtAmerica page where the user is able to buy ready made products from the business.
 
 ##### Mobile / Tablet
 
