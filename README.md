@@ -1,3 +1,6 @@
+<link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+
+<body id="readme">
 <div id="top"></div>
 
 [![Contributors][contributors-shield]][contributors-url]
@@ -37,14 +40,14 @@
 <!-- TABLE OF CONTENTS -->
 <details>
   <summary>Table of Contents</summary>
-  <ol>
-    <li><a href="#introduction">Introduction</a></li>
+  <ul class="table-of-contents">
+    <li><a href="#introduction">1. Introduction</a></li>
     <li>
-      <a href="#styling">Site Styling</a>
+      <a href="#styling">2. Site Styling</a>
       <ul>
         <li>
           <a href="#common-elements">2.1. Common Elements</a>
-          <ul>
+          <ul class="smallest">
             <li><a href="#header">2.1.1. Header</a></li>
             <li><a href="#footer">2.1.2. Footer</a></li>
             <li><a href="#colours">2.1.3. Colours</a></li>
@@ -53,7 +56,7 @@
         </li>
         <li>
         <a href="#pages">2.2 Pages</a>
-          <ul>
+          <ul class="smallest">
             <li><a href="#index">2.2.1. Index</a></li>
             <li><a href="#pricing">2.2.2. Pricing</a></li>
             <li><a href="#gallery">2.2.3. Gallery</a></li>
@@ -64,7 +67,7 @@
       </ul>
     </li>
     <li>
-    <a href="#testing">Testing</a>
+    <a href="#testing">3. Testing</a>
       <ul>
         <li><a href="#methods">3.1. Methodology and Results</a></li>
         <li><a href="#issues">3.2. Issues During Testing</a></li>
@@ -74,7 +77,7 @@
     <li><a href="#future-enhancements">5. Future Enhancements</a></li>
     <li><a href="#contact">6. Contact</a></li>
     <li><a href="#credits">7. Credits</a></li>
-  </ol>
+  </ul>
 </details>
 
 
@@ -172,7 +175,7 @@ The about page has the purpose of informing the user about the background of the
 
 <h2 id="testing">3. Testing</h2>
 
-<h3 id="methods">3.1. Methodology and Results
+<h3 id="methods">3.1. Methodology and Results</h3>
 
 All of the pages have been thoroughly tested by individuals as well as using software such as ARC and Lighthouse. The user feedback has been positive, without any major suggestions for improvement. Both softwares showed some issues, which have been solved as well as they possibly could have been using the already existing site framework.
 
@@ -218,15 +221,15 @@ All of the UI was tested with both Lighthouse and ARC, with both flagging the co
 There are a few details I would definitely like to improve with the site in the future:
 
 <ol>
-  <li>**Create a "sandwitch" navigation panel for mobile users**</li>
+  <li><b>Create a "sandwitch" navigation panel for mobile users</b></li>
     <p>
     I tried to accomplish this with CSS and HTML alone but the search for a solution turned out to be too time consuming for it to be a viable option at this time. Once I am able to use JavaScript to a higher degree it is my plan to make this happen as from my understanding the process is much easier with JavaScript. At this point however my skills aren't good enough in JS to accomplish this but it would eliminate the need for the button to top which could have negative implications on user experience through their scroll position not being saved.
     </p>
-  <li>**Fix the gap between two of the columns in gallery**</li>
+  <li><b>Fix the gap between two of the columns in gallery</b></li>
     <p>
     As mentioned before this issue does not impact usability to a significant degree but in the future I would like to fix this as it is somewhat visible and deviates from the consistent padding between the photos generally.
     </p>
-  <li>**Improve and add translations**</li>
+  <li><b>Improve and add translations</b></li>
     <p>
     At this point I am fully aware that the translations of all the pages aren't perfect - they are in a few points transliterated instead of finding a phrasing in the target language that would be equivalent to the English one. They are fully readable in each language however so the only difference would be a slightly improved user experience. I would also like to translate the site into other languages once I am proficient enough to be able to confidently do this, at this point however, the languages offered will be more than enough for the vast majority of the business' target demographies.
     </p>
@@ -251,6 +254,7 @@ Project Link: [https://beccauwu.github.io/my-site](https://beccauwu.github.io/my
 * []()
 
 <p align="right">(<a href="#top">back to top</a>)</p>
+</body>
 
 
 
