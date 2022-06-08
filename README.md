@@ -63,12 +63,17 @@
         <li><a href="#worth-mentioning">2.3. Worth Mentioning</a></li>
       </ul>
     </li>
-    <li><a href="#testing">Testing</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
+    <li>
+    <a href="#testing">Testing</a>
+      <ul>
+        <li><a href="#methods">3.1. Methodology and Results</a></li>
+        <li><a href="#issues">3.2. Issues During Testing</a></li>
+      </ul>
+    </li>
+    <li><a href="#bugs">4. Bugs</a></li>
+    <li><a href="#future-enhancements">5. Future Enhancements</a></li>
+    <li><a href="#contact">6. Contact</a></li>
+    <li><a href="#credits">7. Credits</a></li>
   </ol>
 </details>
 
@@ -166,6 +171,8 @@ The about page has the purpose of informing the user about the background of the
 ##### Mobile / Tablet
 
 <h2 id="testing">3. Testing</h2>
+
+<h3 id="methods">3.1. Methodology and Results
 
 All of the pages have been thoroughly tested by individuals as well as using software such as ARC and Lighthouse. The user feedback has been positive, without any major suggestions for improvement. Both softwares showed some issues, which have been solved as well as they possibly could have been using the already existing site framework.
 
