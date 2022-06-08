@@ -79,6 +79,7 @@
 
 [![Product Name Screen Shot][product-screenshot]](https://beccauwu.github.io/my-site)
 
+The site is a homepage for a photography and accounting business. It is there to attract new customers and to provide information about the business in one place. As it is a photography business I wanted to use my photos in as many places as possible. The site is divided into 4 pages and has translations into both Swedish and Finnish for all of the pages, as the target audience is around the Fenno-Swedish border.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -186,6 +187,17 @@ All of the UI was tested with both Lighthouse and ARC, with both flagging the co
 
 <h2 id="bugs">4. Bugs</h2>
 
+<b>Fixed:</b>
+
+<ul>
+  <li>
+    On the gallery page, the columns didn't fill the entire width as planned when using setting the dlex and max-width properties to 25% or 50%. This was due to those numbers not taking the padding into account, which I don't know why, all the examples I read online with similar arrangements worked fine. My solution to thins was to instead calculate the values for flex and max-width by subtracting the padding from 100%.
+  </li>
+  <li>
+  </li>
+</ul>
+
+<b>Persistent:</b>
 There is a minor issue of one column in the gallery page having an amount of top padding I cannot explain at this point. It isn't an issue in terms of usability, but aesthetically it creates an inconsistent amount of gap between two of the pictures, which for me is a moderate nuisance. I will continue researching what the fault could be and aim to correct this as soon as I am able to.
 
 <h2 id="future-enhancements">5. Future Enhancements</h2>
@@ -212,7 +224,7 @@ There are a few details I would definitely like to improve with the site in the 
 
 Rebecca Perttula - [@uwuphoto](https://twitter.com/uwuphoto) - rebecca@perttula.co
 
-Project Link: [https://github.com/beccauwu/my-site](https://github.com/beccauwu/my-site)
+Project Link: [https://beccauwu.github.io/my-site](https://beccauwu.github.io/my-site)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
