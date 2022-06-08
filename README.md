@@ -191,14 +191,20 @@ All of the UI was tested with both Lighthouse and ARC, with both flagging the co
 
 <ul>
   <li>
-    On the gallery page, the columns didn't fill the entire width as planned when using setting the dlex and max-width properties to 25% or 50%. This was due to those numbers not taking the padding into account, which I don't know why, all the examples I read online with similar arrangements worked fine. My solution to thins was to instead calculate the values for flex and max-width by subtracting the padding from 100%.
+    On the gallery page, the columns didn't fill the entire width as planned when setting the flex and max-width properties to 25% or 50%. This was due to those numbers not taking the padding into account, which I don't know why, all the examples I read online with similar arrangements worked fine. My solution to this was to instead calculate the values for flex and max-width by subtracting the padding from the relevant percentage.
   </li>
   <li>
+    The header ended up having the wrong breakpoints in translated pages due to the translated navigation links having a larger character count. This was fixed by adding a class for these breakpoints in the translated html's and fixing the styling.
   </li>
 </ul>
 
 <b>Persistent:</b>
-There is a minor issue of one column in the gallery page having an amount of top padding I cannot explain at this point. It isn't an issue in terms of usability, but aesthetically it creates an inconsistent amount of gap between two of the pictures, which for me is a moderate nuisance. I will continue researching what the fault could be and aim to correct this as soon as I am able to.
+<ul>
+  <li>
+    There is a minor issue of one column in the gallery page having an amount of top padding I cannot explain at this point. It isn't an issue in terms of usability, but aesthetically it creates an inconsistent amount of gap between two of the pictures, which for me is a moderate nuisance. I will continue researching what the fault could be and aim to correct this as soon as I am able to.
+  </li>
+</ul>
+
 
 <h2 id="future-enhancements">5. Future Enhancements</h2>
 
