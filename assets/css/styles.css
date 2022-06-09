@@ -308,6 +308,7 @@ h4 {
 
 .more-info p {
     color: var(--purple);
+    font-weight: 700;
 }
 
 .more-info i {
@@ -468,10 +469,6 @@ h4 {
         width: 35px;
     }
 
-    /* pricing */
-    .prices td {
-        font-size: 80%;
-    }
 
     /* gallery */
     .row {
