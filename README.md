@@ -22,7 +22,7 @@
 <h3 align="center">Portfolio Project 1 - HTML & CSS</h3>
 
   <p align="center">
-    project_description
+    A site for my business made from scratch using HTML and CSS.
     <br />
     <a href="https://github.com/beccauwu/my-site"><strong>Visit the site »</strong></a>
     <br />
@@ -82,7 +82,7 @@
 
 
 
-<!-- ABOUT THE PROJECT -->
+<!-- Introduction -->
 <h2 id="introduction">1. Introduction</h2>
 
 [![Product Name Screen Shot][product-screenshot]](https://beccauwu.github.io/my-site)
@@ -93,7 +93,7 @@ The site is a homepage for a photography and accounting business. It is there to
 
 
 
-<!-- GETTING STARTED -->
+<!-- Styling -->
 <h2 id="styling">2. Site Styling</h2>
 
 Here I will go through all the different design choices and talk about what implications they are designed to have on user experience. As a general note here in the beginning, it would be important to stress that usability has been the top priority in creating the site and thorough testing has been done to see potential flaws and fix them.
@@ -123,13 +123,12 @@ For the colour scheme on my site I chose to go with colours already in use by th
 
 <h4 id="other"> 2.1.4. Other</h4>
 
-##### Borders
+<h4>Borders</h4>
 
-The border thickness is consistent depending on the element it is applied on. For links where a border is used it is 2px in thickness, for tables and other text content 5px, and the border radius used is 15px.
+The border thickness is consistent depending on the element it is applied on. For links where a border is used it is 2px in thickness, for tables and other text content 5px, and the border radius used is 15px throughout the site.
 
-##### Responsiveness
+<h4>Navigation</h4>
 
-###### Navigation
 ![Image of the element linking to the top of a page][topbtn]
 
 At a viewport width of 804px the header started taking out a substantial amount of the screen height and would have only ended up being in the way for the user. At this width there is instead a button in the bottom right corner that links to the top of the page in order for the user to still be able to easily access the navigataion bar when needed. The button is round and has an arrow pointing upwards in green on a black background, with green borders around.
@@ -162,7 +161,7 @@ The first elements on this page are quite naturally tables showing examples of t
 
 The gallery page is in its entirety only an assortment of photos to act as a photography portfolio, in order for the customers to feel confident in hiring the business for photography. The gallery is a 4-column flexbox which adapts its stacking for the screen width - the maximum amount of columns is 4 but depending on the screen it will be 2 or 1 columns. I ran into issues with the flexbox from the start in the 4 column variation; even though it should have aligned, well one column kept stacking down. I figured out that the issue has to do with padding, which it was, however, it doesn't explain the numerous examples of similar solutions found online seemingly working without issue. My fix to this was to subtract the amount of side padding in total divided by the amount of columns and use this as the flex and max-width values, which fixed the issue.
 
-##### Mobile / Tablet
+
 
 <h4 id="about">2.2.4. About</h4>
 
@@ -171,7 +170,7 @@ The gallery page is in its entirety only an assortment of photos to act as a pho
 
 The about page has the purpose of informing the user about the background of the business, how it started, why it started and what it does. It also features clickable links for email, mobile and WhatsApp, which also has a QR code for those on PCs. There is also a link to the FineArtAmerica page where the user is able to buy ready made products from the business.
 
-##### Mobile / Tablet
+
 
 <h2 id="testing">3. Testing</h2>
 
@@ -179,8 +178,11 @@ The about page has the purpose of informing the user about the background of the
 
 All of the pages have been thoroughly tested by individuals as well as using software such as ARC and Lighthouse. The user feedback has been positive, without any major suggestions for improvement. Both softwares showed some issues, which have been solved as well as they possibly could have been using the already existing site framework.
 
+![Lighthouse results][lighthouse]
+
 <h3 id="issues">3.2. Issues During Testing</h3>
 
+![Contrast ratio flag][contrast-ratio]
 <ul>
   <li>
     Both ARC and Lighthouse flagged the contrast ratio of the logo text compared to the background as being too low, which I believe to be a false positive. After multiple-user testing, the conclusion has consistently been that it is fully readable. The pages have been put through multiple different colour blindness filters where the text has also been fully readable on each of them. Further evidence of a false positive is that neither of these extensions flag the text on the index page hero photo, where logically the contrast ratio should be registered as lower due to the opaque background. I believe the testing fully disregards the header background colour and instead tests the logo text against the background photo on the index page, which is behind the header and therefore doesn't affect the readability of the text whatsoever.
@@ -192,8 +194,6 @@ All of the pages have been thoroughly tested by individuals as well as using sof
     In the early stages of development, the pages containing images were flagged for using uncompressed image files, this was solved by compressing the files and converting them to webp which substantially imroved the performance scores of the site - going from around 80 to 100. Most of the jpeg and png-files were converted excluding the png files which had a transparent background as webp as a format does not support it and instead creates files which don't look great. A perfect example of this would be the WhatsApp QR-code, for which if converted to webp it would become a much momre difficult and time consuming task to add a border radius to the white background, which now is done by instead of the image file having the backgrund, placing it behind the image through the stylesheet.
   </li>
 </ul>
-
-All of the UI was tested with both Lighthouse and ARC, with both flagging the contrast ratio of the logo text compared to the background as being too low, which I believe to be a false positive. After multiple-user testing, the conclusion has consistently been that it is fully readable. The pages have been put through multiple different colour blindness filters where the text has also been fully readable on each of them. Further evidence of a false positive is that neither of these extensions flag the text on the index page hero photo, where logically the contrast ratio should be registered as lower due to the opaque background. I believe the testing fully disregards the header background colour and instead tests the logo text against the background photo on the index page, which is behind the header and therefore doesn't affect the readability of the text whatsoever.
 
 <h2 id="bugs">4. Bugs</h2>
 
@@ -289,3 +289,5 @@ Project Link: [https://beccauwu.github.io/my-site](https://beccauwu.github.io/my
 [about-425]: assets/images/site-captures/vw-425/about.png
 [topbtn]: assets/images/site-captures/vw-425/topbtn.png
 [colours]: assets/images/site-captures/colours.png
+[lighthouse]: assets/images/site-captures/lighthouse.png
+[contrast-ratio]: assets/images/site-captures/cr.png

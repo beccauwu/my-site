@@ -598,6 +598,9 @@ h4 {
 #readme a {
     color: var(--purple);
 }
+#readme {
+    background-color: initial;
+}
 .table-of-contents, .table-of-contents ul {
     list-style-type: none;
 }
