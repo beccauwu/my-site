@@ -74,9 +74,10 @@
       </ul>
     </li>
     <li><a href="#bugs">4. Bugs</a></li>
-    <li><a href="#future-enhancements">5. Future Enhancements</a></li>
-    <li><a href="#contact">6. Contact</a></li>
-    <li><a href="#credits">7. Credits</a></li>
+    <li><a href="#deployment">5. Deployment</a></li>
+    <li><a href="#future-enhancements">6. Future Enhancements</a></li>
+    <li><a href="#contact">7. Contact</a></li>
+    <li><a href="#credits">8. Credits</a></li>
   </ul>
 </details>
 
@@ -185,60 +186,54 @@ All of the pages have been thoroughly tested by individuals as well as using sof
 <h3 id="issues">3.2. Issues During Testing</h3>
 
 ![Contrast ratio flag][contrast-ratio]
-<ul>
-  <li>
-    Both ARC and Lighthouse flagged the contrast ratio of the logo text compared to the background as being too low, which I believe to be a false positive. After multiple-user testing, the conclusion has consistently been that it is fully readable. The pages have been put through multiple different colour blindness filters where the text has also been fully readable on each of them. Further evidence of a false positive is that neither of these extensions flag the text on the index page hero photo, where logically the contrast ratio should be registered as lower due to the opaque background. I believe the testing fully disregards the header background colour and instead tests the logo text against the background photo on the index page, which is behind the header and therefore doesn't affect the readability of the text whatsoever.
-  </li>
-  <li>
-    The contrast ratios of some of the smaller sized texts, particularly the ones using the red variable colour, were flagged which was quite understandable as the text was quite thin and in some cases probably would be difficult to read. This was solved by either increasing the font size or the font weight, stopping them from being flagged.
-  </li>
-  <li>
-    In the early stages of development, the pages containing images were flagged for using uncompressed image files, this was solved by compressing the files and converting them to webp which substantially imroved the performance scores of the site - going from around 80 to 100. Most of the jpeg and png-files were converted excluding the png files which had a transparent background as webp as a format does not support it and instead creates files which don't look great. A perfect example of this would be the WhatsApp QR-code, for which if converted to webp it would become a much momre difficult and time consuming task to add a border radius to the white background, which now is done by instead of the image file having the backgrund, placing it behind the image through the stylesheet.
-  </li>
-</ul>
+
+* Both ARC and Lighthouse flagged the contrast ratio of the logo text compared to the background as being too low, which I believe to be a false positive. After multiple-user testing, the conclusion has consistently been that it is fully readable. The pages have been put through multiple different colour blindness filters where the text has also been fully readable on each of them. Further evidence of a false positive is that neither of these extensions flag the text on the index page hero photo, where logically the contrast ratio should be registered as lower due to the opaque background. I believe the testing fully disregards the header background colour and instead tests the logo text against the background photo on the index page, which is behind the header and therefore doesn't affect the readability of the text whatsoever.
+
+* The contrast ratios of some of the smaller sized texts, particularly the ones using the red variable colour, were flagged which was quite understandable as the text was quite thin and in some cases probably would be difficult to read. This was solved by either increasing the font size or the font weight, stopping them from being flagged.
+
+* In the early stages of development, the pages containing images were flagged for using uncompressed image files, this was solved by compressing the files and converting them to webp which substantially imroved the performance scores of the site - going from around 80 to 100. Most of the jpeg and png-files were converted excluding the png files which had a transparent background as webp as a format does not support it and instead creates files which don't look great. A perfect example of this would be the WhatsApp QR-code, for which if converted to webp it would become a much momre difficult and time consuming task to add a border radius to the white background, which now is done by instead of the image file having the backgrund, placing it behind the image through the stylesheet.
 
 <h2 id="bugs">4. Bugs</h2>
 
-<b>Fixed:</b>
+**Fixed:**
 
-<ul>
-  <li>
-    On the gallery page, the columns didn't fill the entire width as planned when setting the flex and max-width properties to 25% or 50%. This was due to those numbers not taking the padding into account, which I don't know why, all the examples I read online with similar arrangements worked fine. My solution to this was to instead calculate the values for flex and max-width by subtracting the padding from the relevant percentage.
-  </li>
-  <li>
-    The header ended up having the wrong breakpoints in translated pages due to the translated navigation links having a larger character count. This was fixed by adding a class for these breakpoints in the translated html's and fixing the styling.
-  </li>
-</ul>
+* On the gallery page, the columns didn't fill the entire width as planned when setting the flex and max-width properties to 25% or 50%. This was due to those numbers not taking the padding into account, which I don't know why, all the examples I read online with similar arrangements worked fine. My solution to this was to instead calculate the values for flex and max-width by subtracting the padding from the relevant percentage.
 
-<b>Persistent:</b>
-<ul>
-  <li>
-    There is a minor issue of one column in the gallery page having an amount of top padding I cannot explain at this point. It isn't an issue in terms of usability, but aesthetically it creates an inconsistent amount of gap between two of the pictures, which for me is a moderate nuisance. I will continue researching what the fault could be and aim to correct this as soon as I am able to.
-  </li>
-</ul>
+* The header ended up having the wrong breakpoints in translated pages due to the translated navigation links having a larger character count. This was fixed by adding a class for these breakpoints in the translated html's and fixing the styling.
 
+**Persistent:**
 
-<h2 id="future-enhancements">5. Future Enhancements</h2>
+* There is a minor issue of one column in the gallery page having an amount of top padding I cannot explain at this point. It isn't an issue in terms of usability, but aesthetically it creates an inconsistent amount of gap between two of the pictures, which for me is a moderate nuisance. I will continue researching what the fault could be and aim to correct this as soon as I am able to.
+
+<h2 id="deployment">5. Deployment</h2>
+
+I deployed the page on GitHub pages via the following procedure:
+
+1. From the project's repository, go to the Settings tab.
+2. From the left-hand menu, select the Pages tab.
+3. Under the Source section, select the Main branch from the drop-down menu and click Save.
+4. A message will be displayed to indicate a successful deployment to GitHub pages and provide the live link.
+
+You can find the live site via the following URL - [Rebecca Perttula live webpage](https://beccauwu.github.io/my-site)
+
+<h2 id="future-enhancements">6. Future Enhancements</h2>
 
 There are a few details I would definitely like to improve with the site in the future:
 
-<ol>
-  <li><b>Create a "sandwitch" navigation panel for mobile users</b></li>
-    <p>
+1. **Create a "sandwitch" navigation panel for mobile users**
+
     I tried to accomplish this with CSS and HTML alone but the search for a solution turned out to be too time consuming for it to be a viable option at this time. Once I am able to use JavaScript to a higher degree it is my plan to make this happen as from my understanding the process is much easier with JavaScript. At this point however my skills aren't good enough in JS to accomplish this but it would eliminate the need for the button to top which could have negative implications on user experience through their scroll position not being saved.
-    </p>
-  <li><b>Fix the gap between two of the columns in gallery</b></li>
-    <p>
+
+2. **Fix the gap between two of the columns in gallery**
+
     As mentioned before this issue does not impact usability to a significant degree but in the future I would like to fix this as it is somewhat visible and deviates from the consistent padding between the photos generally.
-    </p>
-  <li><b>Improve and add translations</b></li>
-    <p>
+
+3. **Improve and add translations**
+
     At this point I am fully aware that the translations of all the pages aren't perfect - they are in a few points transliterated instead of finding a phrasing in the target language that would be equivalent to the English one. They are fully readable in each language however so the only difference would be a slightly improved user experience. I would also like to translate the site into other languages once I am proficient enough to be able to confidently do this, at this point however, the languages offered will be more than enough for the vast majority of the business' target demographies.
-    </p>
-</ol>
 
 <!-- CONTACT -->
-<h2 id="contact">6. Contact</h2>
+<h2 id="contact">7. Contact</h2>
 
 Rebecca Perttula - [@uwuphoto](https://twitter.com/uwuphoto) - rebecca@perttula.co
 
@@ -249,7 +244,7 @@ Project Link: [https://beccauwu.github.io/my-site](https://beccauwu.github.io/my
 
 
 <!-- Credits -->
-<h2 id="credits">7. Credits</h2>
+<h2 id="credits">8. Credits</h2>
 
 * []()
 * []()
