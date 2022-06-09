@@ -246,9 +246,8 @@ Project Link: [https://beccauwu.github.io/my-site](https://beccauwu.github.io/my
 <!-- Credits -->
 <h2 id="credits">8. Credits</h2>
 
-* []()
-* []()
-* []()
+* Richard Wells
+  My Code Institute mentor who has helped me tremendously throughout the project, giving tonnes of gread advice and helped me figure out many things.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 </body>
