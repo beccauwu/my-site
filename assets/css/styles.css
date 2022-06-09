@@ -68,15 +68,15 @@ footer {
 }
 
 .bold {
-    font-weight: bold;
+    font-weight: 900;
 }
 
 .border-right {
-    border-right: 1px solid var(--red);
+    border-right: 2px solid var(--red);
 }
 
 .border-top {
-    border-top: 1px solid var(--red);
+    border-top: 3px solid var(--red);
 }
 
 .color-red {
