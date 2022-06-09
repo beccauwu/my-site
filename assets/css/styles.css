@@ -178,11 +178,6 @@ h4 {
 
 /* footer */
 
-.copyright {
-    color: var(--red);
-    font-weight: 900;
-}
-
 .sigil-container {
     bottom: 2px;
     left: 10px;
@@ -236,7 +231,6 @@ h4 {
 .hero-text a {
     border-radius: 15px;
     border: 2px solid var(--purple);
-    color: var(--purple);
     font-size: 140%;
     font-weight: bold;
     padding: 15px;
@@ -282,16 +276,7 @@ h4 {
 }
 
 .prices th {
-    color: var(--red);
     text-decoration: underline;
-}
-
-.prices td {
-    color: var(--purple);
-}
-
-.prices p {
-    color: var(--red);
 }
 
 .prices table,
@@ -312,7 +297,6 @@ h4 {
 }
 
 .more-info i {
-    color: var(--red);
     font-size: 120%;
 }
 
@@ -372,12 +356,6 @@ h4 {
     text-decoration: underline;
 }
 
-.contact-info p {
-    color: var(--red);
-    font-size: 80%;
-    font-weight: bold;
-}
-
 .whatsapp {
     background-color: var(--white);
     border-radius: 15px;
@@ -402,13 +380,10 @@ h4 {
 }
 
 .elsewhere p {
-    color: var(--red);
-    font-weight: bold;
     text-decoration: underline;
 }
 
 .elsewhere i {
-    color: var(--red);
     font-size: 150%;
     letter-spacing: 5px;
 }
