@@ -176,8 +176,10 @@ The about page has the purpose of informing the user about the background of the
 
 <h3 id="methods">3.1. Methodology and Results</h3>
 
-All of the pages have been thoroughly tested by individuals as well as using software such as ARC and Lighthouse. The user feedback has been positive, without any major suggestions for improvement. Both softwares showed some issues, which have been solved as well as they possibly could have been using the already existing site framework.
+All of the pages have been thoroughly tested by individuals as well as using software such as ARC and Lighthouse. The user feedback has been positive, without any major suggestions for improvement. Both softwares showed some issues, which have been solved as well as they possibly could have been using the already existing site framework. Both the CSS and HTML has been passed through the W3C validation service without errors.
 
+![HTML validation without errors][html-validation]
+![CSS validation without errors][css-validation]
 ![Lighthouse results][lighthouse]
 
 <h3 id="issues">3.2. Issues During Testing</h3>
@@ -289,5 +291,7 @@ Project Link: [https://beccauwu.github.io/my-site](https://beccauwu.github.io/my
 [about-425]: assets/images/site-captures/vw-425/about.png
 [topbtn]: assets/images/site-captures/vw-425/topbtn.png
 [colours]: assets/images/site-captures/colours.png
-[lighthouse]: assets/images/site-captures/lighthouse.png
-[contrast-ratio]: assets/images/site-captures/cr.png
+[lighthouse]: assets/images/lighthouse.png
+[contrast-ratio]: assets/images/cr.png
+[css-validation]: assets/images/w3ccss.png
+[html-validation]: assets/images/w3chtml.png
