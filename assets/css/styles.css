@@ -397,14 +397,6 @@ h4 {
     text-decoration: underline;
 }
 
-.kofiframe {
-    border:none;
-    border-radius: 15px;
-    width:20%;
-    padding:4px;
-    background:#f9f9f9;
-}
-
 /* make it work on mobile */
 
 @media only screen and (max-width: 925px) {
