@@ -13,7 +13,7 @@
 
 
 
-<!-- PROJECT LOGO -->
+<!-- site logo -->
 <br />
 <div align="center">
   <a href="https://beccauwu.github.io/my-site/">
