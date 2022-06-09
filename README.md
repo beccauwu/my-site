@@ -16,7 +16,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/beccauwu/my-site">
+  <a href="https://beccauwu.github.io/my-site/">
     <img src="assets/images/logo.png" alt="Logo" width="308" height="80">
   </a>
 
@@ -25,10 +25,9 @@
   <p align="center">
     A site for my business made from scratch using HTML and CSS.
     <br />
-    <a href="https://github.com/beccauwu/my-site"><strong>Visit the site »</strong></a>
+    <a href="https://beccauwu.github.io/my-site/"><strong>Visit the site »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/beccauwu/my-site">View Demo</a>
     ·
     <a href="https://github.com/beccauwu/my-site/issues">Report Bug</a>
     ·
