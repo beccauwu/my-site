@@ -248,7 +248,7 @@ Project Link: [https://beccauwu.github.io/my-site](https://beccauwu.github.io/my
 
 * **Richard Wells**
   
-  My Code Institute mentor who has helped me tremendously throughout the project, giving tonnes of gread advice and helped me figure out many things.
+  My Code Institute mentor who has helped me tremendously throughout the project, giving tonnes of great advice and helped me figure out many things.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 </body>
